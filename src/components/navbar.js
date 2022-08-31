@@ -22,7 +22,9 @@ const Left = styled.div`
 `
 const Center = styled.div`
     flex: 1;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 `
 const Right = styled.div`
     flex: 1;
@@ -66,6 +68,9 @@ const MenuItem = styled.div`
     }
     ${mobile({fontSize: "12px",marginLeft: "10px"})};
 `
+const Image = styled.img`
+    height: 40px;
+`
 const navbar = () => {
   return (
     
@@ -79,6 +84,8 @@ const navbar = () => {
                 </SearchContainer>
             </Left>
             <Center>
+                
+            <Image src="https://image.shutterstock.com/image-vector/letter-b-logo-icon-design-260nw-1741182017.jpg" />
             <Link style = {{textDecoration: "none", color: 'black'}} to="/"><Logo>bellroy</Logo></Link>
             </Center>
             <Right>
